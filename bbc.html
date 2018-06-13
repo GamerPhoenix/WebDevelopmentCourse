@@ -48,7 +48,7 @@
 
             #bell{
                 height: 24px;
-                margin:10px 8px;
+                margin:10px 8px 0 8px;
                 float: left;
                 padding-right: 3px;
             }
@@ -84,6 +84,7 @@
                 background-color: red;
                 width: 100%;
                 height:70px;
+                border-top: 1px black solid;
             }
             #menu-bar{
                 width:1500px;
@@ -100,10 +101,25 @@
             }
             #local-news{
                 float: right;
+                border: 1px black solid;
+                width: 210px;
+                padding: 5px 5px 0 5px;
+                position: relative;
+                top: 15px;
+                margin-right: 50px;
 
             }
             #local-news a{
                 color: white;
+                text-decoration: none;
+                font-size: 25px;
+
+            }
+            #local-news a:hover{
+                text-decoration: underline;
+            }
+            #local-news img{
+                height: 20px;
             }
         </style>
 
@@ -153,12 +169,12 @@
         <div class="clear"></div>
 
         <div id="menu-bar-container">
+            <div id="local-news">
+                <a href="">Find local news</a>
+                <img src="img/arrow_black.PNG">
+            </div>
             <div id="menu-bar">
-                <h1>NEWS</h1>
-                <div id="local-news">
-                    <a href="">Find local news</a>
-                    <img src="img/bell_red.PNG">
-                </div>
+                <h1>NEWS</h1>   
             </div>
         </div>
         
